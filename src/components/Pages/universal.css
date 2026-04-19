@@ -1,0 +1,297 @@
+@import url('https://fonts.cdnfonts.com/css/cgf-locust-resistance');
+:root {
+    --twilight-gradient: linear-gradient(to bottom, #ff8a00, #da1b60);
+    --ultra-rare: linear-gradient(
+      135deg,
+      hsla(87, 100%, 89%, 1) 0%,
+      hsla(87, 100%, 89%, 1) 19%,
+      hsla(177, 86%, 63%, 1) 55%,
+      hsla(276, 100%, 87%, 1) 84%
+    ) 1;   
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 16px;
+    }
+  }
+
+.container {
+    width: 100%;
+    min-width: auto;
+    /* max-width: 1200px; */
+    min-height: 100vh;
+    background-color: #20242895;
+    margin: 0 auto;
+    padding: 10px;
+    /* overflow-x: auto; */
+}
+.text-center{
+    text-align: center;
+}
+.margin-center{
+    margin: 0 auto;
+}
+
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+.align-center{
+    display: flex;
+    align-items: center;
+}
+
+.main-title {
+    font-family: 'CGF Locust Resistance', sans-serif;
+    color: #20a0ba !important;
+    margin-bottom: 2px !important;
+}
+.sub-title {
+    color:#ceced1 !important;
+    margin-top: 0px !important;
+}
+
+a{
+    color: #ffa500;
+}
+a:hover{
+    color: #ff4400;
+}
+.list li {
+    margin-left: 20px;
+  }
+.space{
+    width: 100%;
+    height: 100%;
+    /* display: flex; */
+}
+.author-text {
+    color: #49aa19
+  }
+  .info-text {
+    color: #13a8a8
+  }
+  .danger-text {
+    /* color: #a61d24 */
+    color: red
+  }
+  .warning-text {
+    color: #e89a3c
+  }
+  .color-text-1{
+    color: #F04770;
+  }
+  .color-text-2{
+    color: #F78C6A;
+  }
+  .color-text-3{
+    color: #FFD167;
+  }
+  .color-text-4{
+    color: #06D7A0;
+  }
+  .color-text-5{
+    color: #108AB1;
+  }
+  .color-text-6{
+    color: #073A4B;
+  }
+
+
+  .card-box{
+    display: flex;
+    justify-content: center;
+    /* background-color: #212529; */
+    padding: 10px; 
+    width: 100%;
+    border-radius: 1rem;
+  }
+  .card {
+    background-color: #343a40;
+    width: 300;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 300;
+  }
+
+  .border-neon {
+    border: 2px solid rgb(0, 225, 255);
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(var(--accent-color), 1)); */
+  }
+  .border-success{
+    border: 1px solid #28a745;
+  }
+  .border-danger{
+    border: 1px solid #d32029;
+  }
+  .border-dot{
+    border: 2px dotted #007bff;
+  }
+  .border{
+    border: 1px solid #5d6770;
+  }
+  .radius{
+    border-radius: 1rem;
+  }
+  .table{
+    width: 100%;
+    border-collapse: collapse;
+    color: #ceced1;
+    /* text-align: center; */
+    /* padding: 5px; */
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+  .table th, .table td {
+    border: 1px solid #343a40;
+    padding: 5px;
+    text-align: center;
+  }
+  .cursor{
+    cursor: pointer;
+  }
+
+    /* character & item background */
+    /* .bg-normal{
+        background-color: #cccccc !important;
+        border-color: #cccccc;
+        border-style: solid;
+        border-width: 3px;
+      }
+      .bg-rare{
+        background-color: #b0e0e6 !important;
+        border-color: #b0e0e6;
+        border-style: solid;
+        border-width: 3px;
+      }
+      .bg-elite{
+        background-color: #c4adff !important;
+        border-color: #c4adff;
+        border-style: solid;
+        border-width: 3px;
+      }
+      .bg-ssr{
+        background-color: #eee8aa !important;
+        border-color: #eee8aa;
+        border-style: solid;
+        border-width: 3px;
+      }
+      .bg-ur{
+        background: linear-gradient(
+          135deg,
+          hsla(87, 100%, 89%, 1) 0%,
+          hsla(87, 100%, 89%, 1) 19%,
+          hsla(177, 86%, 63%, 1) 55%,
+          hsla(276, 100%, 87%, 1) 84%
+        ) !important;
+        border-image: var(--ultra-rare);
+        border-style: solid;
+        border-width: 3px;
+      } */
+
+  /* ================ */
+
+.modal-btn{
+  width: 50px;
+  height: 50px;
+  border-radius: 1rem;
+}
+
+.custom-uploader {
+  border: 2px dashed #00b96b;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.custom-uploader .ant-icon{
+  font-size: x-large;
+  color: #00b96b;
+}
+
+.custom-uploader:hover {
+  background-color: transparent;
+}
+
+.modal-image-card{
+  text-align: center;
+  position: relative;
+}
+.modal-image-card .ant-card-body{
+  padding: 0px;
+}
+.remove-btn{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+.modal-image-card .image{
+  max-width: 100%;
+  height: 150px;
+  border-radius: 1rem;
+}
+
+.file-preview-enter {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.file-preview-enter-active {
+  max-height: 200px; /* Adjust as needed */
+  opacity: 1;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.file-preview-exit {
+  max-height: 200px;
+  opacity: 1;
+}
+
+.file-preview-exit-active {
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.row-light{
+  background-color: #1D1D1D;
+}
+
+.row-dark{
+  background-color: #202327;
+}
+
+.ant-input-group-addon .ant-btn{
+  margin-bottom: 0px !important;
+}
+
+.narrow {
+  width: 100px;
+  height: 150px;
+}
+
+.fill {
+  object-fit: fill;
+}
+
+.contain {
+  object-fit: contain;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.none {
+  object-fit: none;
+}
+
+.scale-down img {
+  object-fit: scale-down;
+}

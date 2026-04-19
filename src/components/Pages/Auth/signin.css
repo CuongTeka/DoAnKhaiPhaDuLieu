@@ -1,0 +1,42 @@
+.signin-bg{
+    background-image: url('../../../assets/109286012_p1.png');
+    position: fixed;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.signin-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 1; */
+    min-height: 100vh;
+}
+.start-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.bg{
+    background-image: url('../../../assets/109286012_p1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.start-container .ant-card{
+    background-color: rgba(0, 0, 0, 0.58);
+    border-radius: 1rem;
+}
+
+
+.signin-card{
+    background-color: #0000008f;
+    border-radius: 2rem;
+}

@@ -1,0 +1,238 @@
+.dockbg{
+  background-image: url(../../../assets/bg/dockyard_bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.techbg{
+  background-image: url(../../../assets/bg/technology_bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.avt {
+    position: absolute;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.div{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.gear-text{
+  font-weight: bold;
+  text-align: center;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 4px;
+  position: relative;
+  background-color: #2d395a7e;
+  transform: translateY(0);
+  transition: all 0.2s ease-out;
+  /* background-color: inherit; */
+}
+
+
+/* .text-break{
+  word-wrap: break-word;
+  word-break: break-word;
+} */
+
+.gear-container{
+  /* box-shadow: 4px 4px #2D395A; */
+  position: relative;
+  /* background-color: #2d395a61; */
+  text-align: center;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: all 0.12s ease;
+  /* color: black; */
+  /* border: 1px solid #2D395A; */
+  box-shadow: 6px 0px #2d395a7e;
+}
+
+.gear-container:hover{
+  overflow: visible;
+  box-shadow: none;
+  white-space: normal;
+  transform: scale(1.05);
+  z-index: 100;
+}
+.gear-container:hover .gear-text {
+  position: absolute;
+  width: 100%;
+  /* background-color: #2d395a; */
+  background-color: rgba(0, 0, 0, 0.658);
+  bottom: 0;
+  /* transform: translateY(100%); */
+  transform: translate(-50%, 100%);
+  animation: expandDown 0.2s ease-out forwards;
+}
+
+@keyframes expandDown {
+  0% {
+    transform: translate(-50%, 90%);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, 100%);
+    opacity: 1;
+  }
+}
+
+.gear-container-inner{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.12s ease;
+}
+/* .gear-container-inner:hover{
+  box-shadow: 3px 5px #00b96b;
+  transform: translate(-2px, -2px);
+} */
+
+.gear-container-inner-inner{
+  position: relative;
+  
+}
+
+.gear-container-inner .star{
+  position: absolute;
+  bottom: 0;
+  /* left: 60%;  */
+  display: flex;
+  /* background-color: red; */
+  /* right: 0; */
+}
+.gear-star{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* z-index: 1; */
+  /* transform: translateX(60%); */
+}
+
+.white{
+  background-color: white;
+}
+
+.bg-common{
+  background-image: url(../../../assets/gearbg/bg1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-rare{
+  background-image: url(../../../assets/gearbg/bg2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-sr{
+  background-image: url(../../../assets/gearbg/bg3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-ssr{
+  background-image: url(../../../assets/gearbg/bg4.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-ur{
+  background-image: url(../../../assets/gearbg/bg5.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slv{
+  position: absolute;
+  background-image: url(../../../assets/gearbg/bg_slv.png);
+  top: 10%;
+  left: -1%;
+  /* transform: translate(-50%, -50%); */
+  width: 2.7rem;
+  height: 2rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  /* font-family: Agency FB;
+  font-size: 1.3rem; */
+  padding-right: 1.8rem;
+}
+.slv .text{
+  font-size: 1.3rem;
+  font-family: Agency FB;
+  padding-left: 1rem;
+}
+
+.gear-trail{
+  position: absolute;
+  bottom: 2%;
+  left: 1.8%;
+  background-image: url(../../../assets/gearbg/bg_back.png);
+  width: 4.1rem;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-family: Agency FB;
+}
+
+.stat-box{
+  background-color: #00000080;
+  width: 90%;
+  height: 20px;
+  /* font-size: small; */
+  font-family: KaiGen Gothic KR;
+  /* vertical-align: middle; */
+  /* margin-right: 10px; */
+  /* padding: 0 10px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.stat-box .tag{
+  font-size: small;
+  font-weight: bold;
+  font-family: Agency FB;
+    line-height: 20px;
+    padding-left: 10px;
+    float: left;
+}
+.in{
+  margin-left: 10px;
+}
+.stat-box .value{
+  font-size: small;
+  font-family: Agency FB;
+  color: #c3b153;
+  line-height: 20px;
+  padding-right: 10px;
+  float: right;
+}
+
+

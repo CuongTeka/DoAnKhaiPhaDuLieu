@@ -1,0 +1,142 @@
+/* ApiDocsPage.css */
+.api-docs-container {
+  padding: 24px;
+  background: #141414; /* Dark mode background */
+  color: rgba(255, 255, 255, 0.85); /* Dark mode text color */
+}
+
+.api-docs-card {
+  background: #1f1f1f; /* Dark mode card background */
+  border: 1px solid #434343; /* Dark mode border */
+  margin-bottom: 16px;
+  
+}
+.api-docs-card .ant-card-body{
+  padding: 10px;
+}
+
+.api-docs-collapse {
+  /* background: #1f1f1f; */
+  /* border: 1px solid #434343; */
+  /* border-radius: 4px; */
+  margin-bottom: 16px;
+}
+
+.get .ant-collapse-header{
+  border-top: 2px solid #1890ff !important;
+}
+.post .ant-collapse-header{
+  border-top: 2px solid #52c41a;
+}
+
+.put .ant-collapse-header{
+  border-top: 2px solid #faad14;
+}
+.delete .ant-collapse-header{
+  border-top: 2px solid #ff4d4f;
+}
+
+.api-docs-collapse .ant-collapse-header {
+  background: #1f1f1f;
+  /* border-bottom: 1px solid #434343; */
+  color: rgba(255, 255, 255, 0.85); /* Dark mode text color */
+  font-weight: 500;
+}
+
+.api-docs-collapse .ant-collapse-content {
+  background: #1f1f1f; /* Dark mode content background */
+  /* border-top: 1px solid #434343; */
+  color: rgba(255, 255, 255, 0.85); /* Dark mode text color */
+}
+.api-docs-example {
+  background: #2a2a2a; /* Dark mode example background */
+  padding: 12px;
+  border-radius: 4px;
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.85); /* Dark mode text color */
+}
+.api-docs-json {
+  /* background: #2a2a2a; */
+  /* padding: 12px; */
+  /* border-radius: 4px; */
+  /* color: rgba(255, 255, 255, 0.85); */
+  font-family: monospace;
+  overflow: hidden;
+  /* font-family: monaco; */
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+
+.api-docs-json code {
+  color: #f8f8f2; /* Light text color */
+  background-color: #1890ff;
+}
+.api-docs-json .key,
+.api-docs-json .string,
+.api-docs-json .number,
+.api-docs-json .boolean,
+.api-docs-json .null {
+  display: inline-block; /* Ensures proper spacing */
+}
+.api-docs-json .key {
+  /* color: #ff79c6; */
+  color: #f8f8f2;
+}
+
+.api-docs-json .string {
+  color: #50fa7b; /* Green for strings */
+}
+
+.api-docs-json .number {
+  color: #bd93f9; /* Purple for numbers */
+}
+
+.api-docs-json .boolean {
+  color: #ffb86c; /* Orange for booleans */
+}
+
+.api-docs-json .null {
+  color: #ff5555; /* Red for null */
+}
+
+.api-docs-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: rgba(255, 255, 255, 0.85); /* Dark mode text color */
+  /* table-layout: auto !important; */
+  table-layout: fixed;
+}
+
+.api-docs-table th,
+.api-docs-table td {
+  padding: 8px;
+  border: 1px solid #434343; /* Dark mode border */
+  /* white-space: nowrap; */
+}
+
+.api-docs-table th {
+  background: #2a2a2a; /* Dark mode table header background */
+  font-weight: 500;
+}
+
+/* Custom colors for HTTP methods */
+.ant-tag-success {
+  background: #52c41a; /* Green for GET */
+  border-color: #52c41a;
+}
+
+.ant-tag-info {
+  background: #1890ff; /* Blue for POST */
+  border-color: #1890ff;
+}
+
+.ant-tag-warning {
+  background: #faad14; /* Orange for PUT */
+  border-color: #faad14;
+}
+
+.ant-tag-danger {
+  background: #ff4d4f; /* Red for DELETE */
+  border-color: #ff4d4f;
+}

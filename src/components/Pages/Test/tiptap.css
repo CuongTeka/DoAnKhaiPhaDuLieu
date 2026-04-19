@@ -1,0 +1,47 @@
+.ant-btn {
+  /* margin: 4px; */
+  margin-bottom: 10px;
+}
+
+.ant-btn.is-active {
+  background: #00b96b; /* Active button background */
+  color: #fff; /* Active button text color */
+}
+
+.ProseMirror {
+  padding: 12px;
+  min-height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #1e1e1e; /* Dark theme background */
+  color: #fff; /* Text color */
+  font-size: 16px; /* Adjust font size */
+  line-height: 1.6; /* Adjust line height */
+}
+
+.ProseMirror:focus {
+  border-color: #00b96b; /* Focus border color */
+  outline: none;
+}
+
+.ProseMirror p {
+  margin: 0 0 12px 0; /* Adjust paragraph spacing */
+}
+
+.ProseMirror h1,
+.ProseMirror h2,
+.ProseMirror h3,
+.ProseMirror h4 {
+  margin: 12px 0; /* Adjust heading spacing */
+  color: #fff; /* Heading text color */
+}
+
+.ProseMirror a {
+  color: #228be6; /* Link color */
+  text-decoration: underline;
+}
+
+.tooltip-container{
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,217 @@
+@import url('https://fonts.cdnfonts.com/css/cgf-locust-resistance');
+
+/*  */
+@media (max-width: 1024px) {
+  .content{
+    margin-left: 7%;
+  }
+  .footer-title{
+    padding-left: 7%;
+  }
+}
+@media (min-width: 1024px) {
+  .footer-title{
+    padding-left: 0%;
+  }
+}
+@media (max-width: 540px) {
+  .content{
+    margin-left: 0%;
+  }
+  .footer-title{
+    padding-left: 0%;
+  }
+  .header-icon{
+    margin-right: 0%;
+  }
+  .header{
+    padding-right: 15px;
+  }
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+/* app */
+.header {
+  /* padding-top: 12px; */
+  /* background:#141414; */
+  display: inline-block;
+  /* text-align: center; */
+  /* z-index: 1; */
+}
+.content {
+  /* margin: 24px 16px;   */
+  padding: '0 48px';
+  /* padding: 20px; */
+  /* background: #112a45; */
+  /* background: rgb(2,0,36); */
+  /* background: linear-gradient(42deg, rgba(2,0,36,1) 0%, rgba(10,22,53,1) 23%, rgba(17,42,69,1) 41%, rgba(13,81,112,1) 60%, rgba(9,120,155,1) 75%, rgba(6,152,189,1) 86%, rgba(0,212,255,1) 100%); */
+  min-height: 100vh;
+  z-index: 0;
+  overflow: hidden;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+.footer {
+  background: #001529;
+  padding: 10px;
+  text-align:center;
+  z-index: 0;
+}
+.content-default {
+  margin-left: 0;
+}
+
+.content-collapsed {
+  transition: margin-left 0.3s ease;
+}
+
+.content-expanded {
+  transition: margin-left 0.3s ease;
+}
+
+.loading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: 2000;
+}
+
+/* sider */
+.sider {
+  height: 100vh;
+  position: fixed !important;
+  left: 0;
+  bottom: 0;
+  top:0;
+}
+.logo {
+  color: #4f6f52;
+  margin: 30px 0;
+  font-size: 1.5rem;
+}
+.logo .title{
+  font-family: 'CGF Locust Resistance', sans-serif;
+  font-size: 1;
+  color: #20a0ba;
+}
+.logo .title1{
+  font-family: 'CGF Locust Resistance', sans-serif;
+  font-size: 1;
+  color: #ba2020;
+}
+.triger-btn {
+  font-size: 16px;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 40px;
+  left: 10px;
+  background-color: #001529 !important;
+  color: #fff !important;
+}
+.menu-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 500;
+}
+/* .ant-menu-item-selected {
+  background-color: #20a0ba !important;
+  color:#fff;
+} */
+
+/* header */
+.header-title{
+  color: #fff;
+}
+.header-group-icon{
+  justify-content: flex-end;
+}
+.header-group-icon{
+  text-align: "end";
+  padding-right: "10px"
+}
+.header-icon {
+  /* background: #20a0ba; */
+  /* padding: 8px; */
+  border-radius: 4px;
+  /* color: #FFF; */
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Footer */
+.footer-title{
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* justify-content: end; */
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+}
+.footer-title a{
+  color: #ffa500;
+}
+.footer-title a:hover{
+  color: #ff4400;
+}
+
+/* utils */
+.white{
+  color: #fff;
+}
+.icon-sm {
+  font-size: 16px;
+}
+.icon-md {
+  font-size: 20px;
+}
+.icon-lg {
+  font-size: 24px;
+}
+/* ================ */
+/* .ant-btn:hover {
+  color: #20a0ba !important;
+  border-color: #20a0ba !important;
+} */
+/* .ant-btn-primary {
+  background-color:#20a0ba;
+} */
+/* .ant-btn-primary:hover{
+  background-color:#173a1a !important;
+  color:#fff !important;
+} */
+/* .primary--color {
+  color: #20a0ba !important;
+} */
+.primary--light--color {
+  color: #739072;
+}
+.secondary--color {
+  color: #86a789 !important;
+}
+.light--color {
+  color: #d2e3c8 !important;
+}
+.gray--color {
+  color: rgb(182, 181, 181) !important;
+}
+
+/* ================= */
