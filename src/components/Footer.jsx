@@ -6,10 +6,10 @@ const Footer = () => {
     <div className="footer-title">
       <Space wrap style={{ justifyContent: "end", width: "100%" }}>
         <p>
-          © 2024 PROJECT <a>ARTEMIS ADMINISTRATION</a>.
+          © {new Date().getFullYear()} PROJECT <a>DATA MINING</a>.
         </p>
         <p>
-          CODED BY <a>TEKA</a>.
+          CODED BY <a>SOMEBODY I USED TO KNOW</a>.
         </p>
       </Space>
     </div>

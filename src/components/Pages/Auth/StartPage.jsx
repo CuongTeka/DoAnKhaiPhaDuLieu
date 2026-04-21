@@ -38,7 +38,7 @@ const StartPage = () => {
               style={{ justifyContent: "center", width: "100%" }}
               direction="vertical"
             >
-              <Alert
+              {/* <Alert
                 message={
                   <Space direction="vertical" size={0}>
                     <Title level={2} style={{ color: "#DC4446" }}>
@@ -69,7 +69,7 @@ const StartPage = () => {
                 }
                 type="error"
                 // showIcon
-              />
+              /> */}
               <Button
                 type="primary"
                 size="large"

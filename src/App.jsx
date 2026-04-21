@@ -43,11 +43,7 @@ import SignupPage from "./components/Pages/Auth/Signup";
 import DashboardPage from "./components/Pages/Dashboard/Dashboard";
 import ProtectedRoute from "./protectedRoute";
 
-import ShipsPage from "./components/Pages/Ships/Ships";
-import ImagePage from "./components/Pages/Imagepage/ImagePage";
-import TestPage from "./components/Pages/Test/Test";
-import ApiPage from "./components/Pages/ApiPage/ApiPage";
-import CalendarPage from "./components/Pages/Calendar/calendar";
+import BookPage from "./components/Pages/Book/Book";
 
 const { Sider, Header, Content } = Layout;
 const siderStyle = {
@@ -170,46 +166,13 @@ function App() {
                         }
                       />
                       <Route
-                        path="/system/ships"
+                        path="/system/books"
                         element={
                           <ProtectedRoute>
-                            <ShipsPage />
+                            <BookPage />
                           </ProtectedRoute>
                         }
                       />
-                      <Route
-                        path="/system/images"
-                        element={
-                          <ProtectedRoute>
-                            <ImagePage />
-                          </ProtectedRoute>
-                        }
-                      />
-                      <Route
-                        path="/system/test"
-                        element={
-                          <ProtectedRoute>
-                            <TestPage />
-                          </ProtectedRoute>
-                        }
-                      />
-                      <Route
-                        path="/system/api"
-                        element={
-                          <ProtectedRoute>
-                            <ApiPage />
-                          </ProtectedRoute>
-                        }
-                      />
-                      <Route
-                        path="/system/calendar"
-                        element={
-                          <ProtectedRoute>
-                            <CalendarPage />
-                          </ProtectedRoute>
-                        }
-                      />
-
                       {/* <Route path="*" element={<Error404 />} />
                   <Route path="/403" element={<Error403 />} />
                   <Route path="/500" element={<Error500 />} />  */}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Modal, Avatar, Space, Typography } from "antd";
+import { Button, Modal, Avatar, Space, Typography, Card } from "antd";
 // import { useAuth } from "../../../authContext";
 import { useNavigate } from "react-router-dom";
 import "../universal.css";
@@ -21,7 +21,7 @@ const Dashboard = () => {
   };
   return (
     <>
-      <div className="container techbg">
+      {/* <div className="container">
         <Space wrap size={16} className="justify-center">
           {gearArray.map((item, index) => (
             <GearIcon
@@ -152,7 +152,8 @@ const Dashboard = () => {
             </div>
           </Space>
         </div>
-      </Modal>
+      </Modal> */}
+      <Card title="Dashboard card">content</Card>
     </>
   );
 };

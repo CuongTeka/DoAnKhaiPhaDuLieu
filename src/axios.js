@@ -2,7 +2,7 @@ import axios from "axios";
 import Cookies from "js-cookie"; // Assuming you store the token in cookies
 
 const instance = axios.create({
-  baseURL: import.meta.env.VITE_BEURL || "http://localhost:8080/",
+  baseURL: import.meta.env.VITE_BEURL || "http://localhost:8080/api",
   withCredentials: true,
 });
 
@@ -17,7 +17,7 @@ instance.interceptors.request.use(
   },
   (error) => {
     return Promise.reject(error);
-  }
+  },
 );
 
 // instance.interceptors.response.use((response) => {
@@ -45,7 +45,7 @@ instance.interceptors.response.use(
   },
   (error) => {
     return Promise.reject(error);
-  }
+  },
 );
 
 export default instance;

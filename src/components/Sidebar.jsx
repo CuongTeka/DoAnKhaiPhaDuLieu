@@ -16,6 +16,7 @@ import {
   CodeOutlined,
   ApiOutlined,
   CalendarOutlined,
+  BookOutlined,
 } from "@ant-design/icons";
 import { Ship, House, Anchor, Plane } from "lucide-react";
 
@@ -27,38 +28,43 @@ const item = [
         Dashboard
       </Link>
     ),
-    icon: <Anchor size={16} />,
+    icon: <HomeOutlined size={16} />,
   },
   {
-    key: "/system/images",
-    label: <Link to="/system/images">Images</Link>,
-    icon: <FileImageOutlined />,
+    key: "/system/books",
+    label: <Link to="/system/books">Books</Link>,
+    icon: <BookOutlined />,
   },
-  {
-    key: "/system/ships",
-    label: <Link to="/system/ships">Ships</Link>,
-    icon: <Ship size={16} />,
-  },
-  {
-    key: "/system/gears",
-    label: <Link to="/system/gears">Gears</Link>,
-    icon: <Plane size={16} />,
-  },
-  {
-    key: "/system/test",
-    label: <Link to="/system/test">Test</Link>,
-    icon: <CodeOutlined />,
-  },
-  {
-    key: "/system/api",
-    label: <Link to="/system/api">API</Link>,
-    icon: <ApiOutlined />,
-  },
-  {
-    key: "/system/calendar",
-    label: <Link to="/system/calendar">Calendar</Link>,
-    icon: <CalendarOutlined />,
-  },
+  // {
+  //   key: "/system/images",
+  //   label: <Link to="/system/images">Images</Link>,
+  //   icon: <FileImageOutlined />,
+  // },
+  // {
+  //   key: "/system/ships",
+  //   label: <Link to="/system/ships">Ships</Link>,
+  //   icon: <Ship size={16} />,
+  // },
+  // {
+  //   key: "/system/gears",
+  //   label: <Link to="/system/gears">Gears</Link>,
+  //   icon: <Plane size={16} />,
+  // },
+  // {
+  //   key: "/system/test",
+  //   label: <Link to="/system/test">Test</Link>,
+  //   icon: <CodeOutlined />,
+  // },
+  // {
+  //   key: "/system/api",
+  //   label: <Link to="/system/api">API</Link>,
+  //   icon: <ApiOutlined />,
+  // },
+  // {
+  //   key: "/system/calendar",
+  //   label: <Link to="/system/calendar">Calendar</Link>,
+  //   icon: <CalendarOutlined />,
+  // },
 ];
 
 const Sidebar = () => {

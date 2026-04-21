@@ -57,7 +57,10 @@ const Signin = () => {
         }
       }
     } catch (err) {
-      setMessage(err.response?.data?.message || "Login failed for some reason");
+      setMessage(
+        err.response?.data?.message ||
+          "Login failed maybe because yo fat ass forget to start the server",
+      );
     } finally {
       // setIsLoading(false);
       const timer = setTimeout(() => {
@@ -86,7 +89,7 @@ const Signin = () => {
       <div className="signin-bg" />
       <div className="signin-container">
         <Card style={{ width: 400 }} className="signin-card">
-          <h2 style={{ textAlign: "center", marginBottom: 20 }}>Login</h2>
+          <h2 style={{ textAlign: "center", marginBottom: 20 }}>Đăng nhập</h2>
           {errMessage && (
             <Alert
               description={<div style={{ color: "red" }}>{errMessage}</div>}
@@ -107,14 +110,12 @@ const Signin = () => {
           >
             <Form.Item
               name="username"
-              rules={[
-                { required: true, message: "Please input your username!" },
-              ]}
+              rules={[{ required: true, message: "Nhập tên đăng nhập!" }]}
             >
               <Input
                 size="large"
                 prefix={<UserOutlined />}
-                placeholder="Username"
+                placeholder="Tên đăng nhập"
                 allowClear
                 autoComplete="off"
                 autoCorrect="off"
@@ -124,14 +125,12 @@ const Signin = () => {
 
             <Form.Item
               name="pass"
-              rules={[
-                { required: true, message: "Please input your password!" },
-              ]}
+              rules={[{ required: true, message: "Nhập mật khẩu!" }]}
             >
               <Input.Password
                 size="large"
                 prefix={<LockOutlined />}
-                placeholder="Password"
+                placeholder="Mật khẩu"
                 autoComplete="newpassword"
                 allowClear
                 variant="filled"
@@ -149,7 +148,7 @@ const Signin = () => {
                 block
                 loading={isloading}
               >
-                Log in
+                Đăng nhập
               </Button>
             </Form.Item>
           </Form>
